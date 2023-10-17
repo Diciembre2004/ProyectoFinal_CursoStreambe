@@ -75,12 +75,11 @@ const showHTML = () => {
 	if (!allProducts.length) {
 		cartEmpty.classList.remove('hidden');
 		rowProduct.classList.add('hidden');
-		cartTotal.classList.add('hidden');
-	} else {
+		cartTotal.classList.add('hidden');} 
+	else {
 		cartEmpty.classList.add('hidden');
 		rowProduct.classList.remove('hidden');
-		cartTotal.classList.remove('hidden');
-	}
+		cartTotal.classList.remove('hidden');}
 
 	//liimpiar HTML
 	rowProduct.innerHTML = '';
