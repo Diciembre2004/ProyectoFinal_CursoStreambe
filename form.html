@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Eriz: contacto</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300&family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300&family=Bubblegum+Sans&family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <img id="logo" src="imagenes/logofondotransparente.png" alt="">
+        <span class="brand-text">ERIZ</span>
+        <a href="form.html" target="_blank">Sobre</a>
+        <a href="form.html" target="_blank">Contacto</a>
+        <a href="#social-footer">Redes Sociales</a>
+    </ul>
+</nav>
+
+<!-- formulario----------------------------------- -->
+<div class="container">
+<div class="center">
+<form action="https://formsubmit.co/20jerezabril@gmail.com" method="POST">
+    <h1>Contactame</h1>
+    <div class="form-row">
+        <label for="inputAddress">Nombre</label>
+        <input type="text" class="form-control" id="inputAddress" required data-bv-notempty-message="El nombre es obligatorio">
+        <label for="inputEmail4">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="ejemplo@dominio.com" required data-bv-emailaddress-message="El correo electrónico no es válido">
+        <label for="inputAddress">Direccion</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        <label for="exampleFormControlTextarea1">Asunto</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+</div>
+
+<div class="profile-div">
+    <h2>Sobre mi</h2>
+    <p>Soy Daniel, me apasiona el arte y la estetica. Empecé vendiendo porque la satisfaccion de brindar objetos de calidad.</p>
+    <p>Puedes encontrarme todos los viernes en <i class="fa fa-map-marker" aria-hidden="true"></i> la Plaza Sarmiento.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d3049.348271808272!2d-71.34975577400188!3d-40.15679887148255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-40.157184!2d-71.3457664!4m5!1s0x96110e7746603fc5%3A0x144d10ce80a59296!2sgoogle%20map%20san%20martin%20de%20los%20andres%20plaza%20sanmierto!3m2!1d-40.155464599999995!2d-71.3479378!5e0!3m2!1ses!2sar!4v1697530827056!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+
+<!---------------------------- FOOTER ------------------------------>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="pasto">
+<path fill="#8ba75d" fill-opacity="1" d="M0,64L80,90.7C160,117,320,171,480,176C640,181,800,139,960,117.3C1120,96,1280,96,1360,96L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+</svg>
+
+<footer id="social-footer">
+    <p>Nuestras redes sociales</p>
+    <div id="social-footer-icons">
+        <a href="link" class="fab fa-tumblr" style='font-size:25px' ></a>
+        <a href="link" class="fab fa-instagram" style='font-size:25px'></a>
+        <a href="link" class="fab fa-facebook" style='font-size:25px'></a>
+        <a href="link" class="fab fa-twitter" style='font-size:25px'></a>
+    </div>
+</footer>
+<footer>
+    <p> Copyright &copy; 2023 Daniel Jerez</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-validator@0.11.9/dist/validator.min.js"></script>
+
+</body>
+
+</html>

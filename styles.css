@@ -1,14 +1,36 @@
 *::after, *::before, * {
     margin: 0;
 }
+
+.fab {
+    padding: 0;
+}
 /*LINK UTILES
 icon SVG https://www.svgrepo.com/svg/489424/close*/
 
+:root {
+    --letras: #111111; 
+    --nav: #241f40;
+    --items: #f3eadf; 
+    --negro: #111111; 
+  }
+  body{
+    margin: auto;
+    width: auto;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 
+    background: rgb(166,157,216);
+    background: linear-gradient(0deg, rgba(166,157,216,1) 0%, rgba(247,178,192,1) 24%, rgba(255,219,223,1) 41%, rgba(255,243,198,1) 57%, rgba(192,235,239,1) 79%, rgba(148,187,233,1) 100%);
+}
 
 /* -------------------------------NAVBAR------------------------------- */
+#logo {
+    max-height: 40px; 
+    margin-right: 10px; 
+}
+
 nav {
-background-color: #111111;
+background-color: var(--nav);
 color: #fff;
 overflow: hidden;
 }
@@ -32,25 +54,20 @@ nav a {
     padding: 14px 16px;
     font-size: 17px;
     transition: background-color 0.3s, color 0.3s;
-    color: #fff;
+    color: var(--items);
 
-    float: right; /* Alinea los enlaces a la derecha */
+    float: right; 
 }
 nav .brand-text {
-    float: left; /* Alinea el enlace "Daniel Jerez" a la izquierda */
-    margin-right: auto; /* Añade margen derecho automático para separarlo de los enlaces a la derecha */
+    float: left; 
+    margin-right: auto; 
+    font-size: 40px;
+    font-family: 'Bubblegum Sans', sans-serif;
 }
 nav a:hover {
-    background-color: salmon;
+    background-color: #f7b2c0;
     color: black;
 }
-body{
-    margin: auto;
-    width: auto;
-    font-family: 'Lato';
-    color: #333;
-}
-
 .icon-cart{
     width: 40px;
     height: 40px;
@@ -73,10 +90,11 @@ img{
 header{
     display: flex;
     padding: 20px 60px 10px;
-    height: 50px;
+    height: 80px;
 
     align-items: center;
     justify-content: space-between;
+    font-family: 'Averia Sans Libre', sans-serif;
 }
 header h1{
     margin-left: 5%;
@@ -99,7 +117,7 @@ header h1{
     box-sizing: border-box;
 
     background-color: #000;
-    color: #fff;
+    color: var(--items);
     width: 25px;
     height: 25px;
 
@@ -118,7 +136,7 @@ header h1{
     top: 50px;
     right: 0;
 
-    background-color: #fff;
+    background-color: var(--items);
     width: 400px;
     z-index: 1;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
@@ -200,16 +218,20 @@ header h1{
     justify-content: center;
     gap: 20px;
     margin: 20px 50px;
+
+    z-index: 2;
 }
 .item{
     border-radius: 10px;
     width: 340px;
+    background-color: var(--items);
 
     margin-left: 20px;
 }
 .item:last-child {
     margin-left: 0;
     justify-content: start;
+    position: absolute;
 }
 .item img{
     width: 100%;
@@ -244,16 +266,37 @@ header h1{
     font-size: 18px;
     font-weight: 900;
 }
-
+/* botones de productos------ */
 .info-product button{
     border: none;
     background: none;
-    background-color: #000;
-    color: #fff;
     padding: 15px 10px;
     cursor: pointer;
+
+    width: 90%;
+    margin-inline-start: 5px;
+}
+.buttons{
+    display: flex;
+    align-items: flex-start;
 }
 
+.buttons .btn-add-cart{
+    background-color: #2b4e64;
+    color: var(--items);
+}
+.buttons .btn-add-cart:hover{
+    background-color: #172f3e;
+}
+.buttons .btn-primary{
+    background-color: #815c97;
+    color: var(--items);
+}
+.buttons .btn-primary:hover{
+    background-color: #572975;
+    color: var(--items);
+}
+/* fin botones de productos------ */
 .cart-empty{
     padding: 20px;
     text-align: center;
@@ -268,7 +311,6 @@ header h1{
 #social-footer {
 padding: 17px 0; /* Ajusta el padding vertical para reducir la altura */
 background-color: #111111;
-margin-top: 60px; /* Agrega margen superior para separarlo del contenedor de arriba */
 }
 
 #social-footer-icons {
@@ -276,7 +318,7 @@ text-align: center;
 } 
 
 #social-footer-icons a {
-color: #fff;
+color: var(--items);
 background: #111111;
 border-radius: 4px;
 text-align: center;
@@ -287,7 +329,7 @@ width: 40px;
 height: 28px;
 padding-top: 12px;
 margin: 0 2px;
-
+margin-inline: 7px;
 transition: all .5s;  /* transition: [propiedades] [duración] [función de tiempo] [retraso]; */
 }
 
@@ -316,8 +358,16 @@ transition: all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 footer {
 text-align: center;
 background-color: #0d0d0d;
-color: white;
+color: var(--items);
 padding: 1px 0;
 margin: auto;
 }
   
+#pasto{
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+.modal-body .modal-header {
+    background-color: var(--items);; /* Tu color de fondo deseado */
+}

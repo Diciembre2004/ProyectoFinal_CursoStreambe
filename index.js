@@ -24,13 +24,17 @@ let allProducts = [];
 //evento que pone productos
 productsList.addEventListener('click', e => {
 	if (e.target.classList.contains('btn-add-cart')) {
-		const product = e.target.parentElement;
-
-		const infoProduct = {
-			quantity: 1,
-			title: product.querySelector('h2').textContent,
-			price: product.querySelector('p').textContent,
-		};
+		const product = e.target.closest('.info-product');
+	
+		if (product) {
+			const title = product.querySelector('h2').textContent;
+			const price = product.querySelector('.price').textContent;
+	
+			const infoProduct = {
+				quantity: 1,
+				title: title,
+				price: price,
+			};
 
 		const exits = allProducts.some(
 			product => product.title === infoProduct.title
@@ -49,7 +53,7 @@ productsList.addEventListener('click', e => {
 		} else {
 			allProducts = [...allProducts, infoProduct];
 		}
-
+	}
 		showHTML();
 	}
 });

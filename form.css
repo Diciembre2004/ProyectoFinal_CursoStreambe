@@ -1,0 +1,26 @@
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.center, .profile-div {
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+    margin: 40px auto 0;
+}
+
+.center button{
+    margin-top: 10px;
+}
+h2 {
+    color: #333;
+}
+
+p {
+    font-size: 1.1rem;
+}

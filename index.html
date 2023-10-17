@@ -5,25 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>flex</title>
+    <title>Eriz: tienda de joyeria</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon-16x16.png">
 
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300&family=Bubblegum+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@300&family=Bubblegum+Sans&family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
 <nav>
     <ul>
-        <a href="#about">Sobre</a>
-        <a href="#contact">Contacto</a>
+        <img id="logo" src="imagenes/logofondotransparente.png" alt="">
+        <span class="brand-text">ERIZ</span>
+        <a href="form.html" target="_blank">Sobre</a>
+        <a href="form.html" target="_blank">Contacto</a>
         <a href="#social-footer">Redes Sociales</a>
     </ul>
 </nav>
 
 <header>
-    <h1>Joyeria de alta calidad</h1>
+    <h1>Tu estilo,tus joyas, tu vida.</h1>
     <div class="container-icon">
         <div class="container-cart-icon">
             <svg class="icon-cart" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="1.5">
@@ -69,108 +82,179 @@
 <div class="container-items">
     <div class="item">
         <figure>
-            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="producto"/>
+            <img src="https://m.media-amazon.com/images/I/61ggPFRfHRL._AC_UX522_.jpg" alt="producto"/>
         </figure>
         <div class="info-product">
-            <h2>Zapatos Nike</h2>
-            <p class="price">$80</p>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <h2>Pin Koi</h2>
+            <p class="price">$10</p>
+            <div class="buttons">
+                <button class="btn-add-cart">Añadir al carrito</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".pin">Ver detalles</button>
+            </div>
         </div>
     </div>
     <div class="item">
         <figure>
-            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="producto"/>
+            <img src="https://m.media-amazon.com/images/I/71JbPGULZoL._AC_UX522_.jpg" alt="producto"/>
         </figure>
         <div class="info-product">
-            <h2>Audifonos</h2>
+            <h2>Pin Planetas</h2>
             <p class="price">$20</p>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <div class="buttons">
+                <button class="btn-add-cart">Añadir al carrito</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".pin">Ver detalles</button>
+            </div>
         </div>
     </div>
     <div class="item">
         <figure>
-            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1099&q=80" alt="producto"/>
+            <img src="https://m.media-amazon.com/images/I/71zBvwEWTuL._AC_UY625_.jpg" alt="producto"/>
         </figure>
         <div class="info-product">
-            <h2>Reloj</h2>
-            <p class="price">$50</p>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <h2>Pin Gatos</h2>
+            <p class="price">$25</p>
+            <div class="buttons">
+                <button class="btn-add-cart">Añadir al carrito</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".pin">Ver detalles</button>
+            </div>
         </div>
     </div>
     <div class="item">
         <figure>
-            <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="producto"/>
+            <img src="https://m.media-amazon.com/images/I/71wvyMHyTmL._AC_UX522_.jpg" alt="producto"/>
         </figure>
         <div class="info-product">
-            <h2>Smartwatch</h2>
+            <h2>Llavero Shiba Inu</h2>
             <p class="price">$90</p>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <div class="buttons">
+                <button class="btn-add-cart">Añadir al carrito</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".llavero">Ver detalles</button>
+            </div>
         </div>
     </div>
     <div class="item">
         <figure>
-            <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="producto"/>
+            <img src="https://m.media-amazon.com/images/I/71-UV+WcpeL._AC_UX522_.jpg" alt="producto"/>
         </figure>
         <div class="info-product">
-            <h2>Perfume</h2>
-            <p class="price">$50</p>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <h2>Llavero Peach</h2>
+            <p class="price">$80</p>
+            <div class="buttons">
+                <button class="btn-add-cart">Añadir al carrito</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".llavero">Ver detalles</button>
+            </div>
         </div>
     </div>
     <div class="item">
         <figure>
-            <img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=800" alt="producto"/>
+            <img src="https://m.media-amazon.com/images/I/617+ti+RKYL._AC_UX522_.jpg" alt="producto"/>
         </figure>
         <div class="info-product">
-            <h2>Perfume</h2>
-            <p class="price">$50</p>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <h2>Llavero Panda</h2>
+            <p class="price">$100</p>
+            <div class="buttons">
+                <button class="btn-add-cart">Añadir al carrito</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".llavero">Ver detalles</button>
+            </div>
         </div>
     </div>
     <div class="item">
         <figure>
-            <img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=800" alt="producto"/>
+            <img src="https://ae01.alicdn.com/kf/S2fa1fd4f2f2e4172a686c7561edbc7025/Pendientes-de-tuerca-de-dibujos-animados-de-animales-para-mujer-2-piezas-1-par-lindo-dinosaurio.jpg_640x640.jpg_.webp" alt="producto"/>
         </figure>
         <div class="info-product">
-            <h2>ultimo</h2>
-            <p class="price">$50</p>
-            <button class="btn-add-cart">Añadir al carrito</button>
+            <h2>Pendiente Trice</h2>
+            <p class="price">$20</p>
+            <div class="buttons">
+                <button class="btn-add-cart">Añadir al carrito</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".pendiente">Ver detalles</button>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img src="https://ae01.alicdn.com/kf/S3daab0fc11984baa83047fb3bdbc2740I/Pendientes-de-tuerca-de-dibujos-animados-de-animales-para-mujer-2-piezas-1-par-lindo-dinosaurio.jpg_640x640.jpg_.webp" alt="producto"/>
+        </figure>
+        <div class="info-product">
+            <h2>Pendiente T-Rex</h2>
+            <p class="price">$30</p>
+            <div class="buttons">
+                <button class="btn-add-cart">Añadir al carrito</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".pendiente">Ver detalles</button>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <figure>
+            <img src="https://ae01.alicdn.com/kf/Sc7fd16ae1ec649dba26992417773dcb7c/Pendientes-de-tuerca-de-dibujos-animados-de-animales-para-mujer-2-piezas-1-par-lindo-dinosaurio.jpg_.webp" alt="producto"/>
+        </figure>
+        <div class="info-product">
+            <h2>Pendiente Tiburon</h2>
+            <p class="price">$20</p>
+            <div class="buttons">
+                <button class="btn-add-cart">Añadir al carrito</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target=".pendiente">Ver detalles</button>
+            </div>
         </div>
     </div>
 
-
-
-    
-    <div class="item">
-        <figure>
-            <img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=800" alt="producto"/>
-        </figure>
-        <div class="info-product">
-            <h2>Perfume</h2>
-            <p class="price">$50</p>
-            <button class="btn-add-cart">Añadir al carrito</button>
+<!-- primera fila ----------------------------------------------------------->
+    <div class="modal fade pin" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="pin">Pins de metal</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            Pins hechos de metal, altamente duraderos al tiempo y el clima. Apto para todo tipo de telas.
+            </div>
+          </div>
         </div>
     </div>
-    <div class="item">
-        <figure>
-            <img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3V0ZSUyMGNhdHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=800" alt="producto"/>
-        </figure>
-        <div class="info-product">
-            <h2>Perfume</h2>
-            <p class="price">$50</p>
-            <button class="btn-add-cart">Añadir al carrito</button>
+    <!-- segunda fila -->
+    <div class="modal fade llavero" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content modal-dialog-centered">
+            <div class="modal-header">
+              <h5 class="modal-title" id="llavero">Llaveros de 3 piezas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            Llaveros hechos de silicona de PVC con anillo de metal. 17 cms de largo y 3.5 cm de ancho.
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- tercer fila -->
+    <div class="modal fade pendiente" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content modal-dialog-centered">
+            <div class="modal-header">
+              <h5 class="modal-title" id="pendiente">Pendiente de animales mordiendo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            Pendientes hechos de resina sintetica con enganche de metal, de un tamaño de aproximadamente 2,5 cm de largo.
+            <img src="https://m.media-amazon.com/images/I/61s0u9-BwuL._AC_UX679_.jpg" alt="">
+            </div>
+          </div>
         </div>
     </div>
 </div>
 
 <!---------------------------- FOOTER ------------------------------>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="pasto">
+<path fill="#8ba75d" fill-opacity="1" d="M0,64L80,90.7C160,117,320,171,480,176C640,181,800,139,960,117.3C1120,96,1280,96,1360,96L1440,96L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+</svg>
 
 <footer id="social-footer">
-    <div id="social-footer-icons"> <!-- icons https://www.w3schools.com/icons/fontawesome_icons_brand.asp -->
-        <a href="link" class="fab fa-steam"></a>
-        <a href="link" class="fab fa-instagram"></a>
-        <a href="link" class="fab fa-paypal"></a>
-        <a href="link" class="fab fa-github"></a>
+    <p>Nuestras redes sociales</p>
+    <div id="social-footer-icons">
+        <a href="link" class="fab fa-tumblr" style='font-size:25px' ></a>
+        <a href="link" class="fab fa-instagram" style='font-size:25px'></a>
+        <a href="link" class="fab fa-facebook" style='font-size:25px'></a>
+        <a href="link" class="fab fa-twitter" style='font-size:25px'></a>
     </div>
 </footer>
 <footer>
@@ -178,6 +262,8 @@
 </footer>
 
 <script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 
 </body>
 
